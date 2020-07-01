@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/visa" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/unionpay" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/mastercard" />
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/card_holder_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:drawableStart="@drawable/user"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="@dimen/_5sdp"
+            android:maxLength="20"
+            android:gravity="center_vertical"
+            android:hint="Card Holder Name"
+            android:inputType="textPersonName"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?colorAccent"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/card_holder_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:drawableStart="@drawable/id_card"
+            android:drawableLeft="@drawable/id_card"
+            android:drawablePadding="@dimen/_5sdp"
+            android:ems="10"
+            android:maxLength="16"
+            android:gravity="center_vertical"
+            android:hint="Card Number"
+            android:inputType="number"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="?colorAccent"
+            app:met_singleLineEllipsis="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/card_holder_expiry"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:drawableStart="@drawable/calendar"
+                android:drawableLeft="@drawable/calendar"
+                android:drawablePadding="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_10sdp"
+                android:text="Card Expiry Date"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/grey"
+                android:textStyle="bold" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/card_holder_cvv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/_5sdp"
+                android:ems="10"
+                android:hint="CVV"
+                android:maxLength="3"
+                android:inputType="number"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="20"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true" />
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/card_holder_postal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:drawableStart="@drawable/map"
+            android:drawableLeft="@drawable/map"
+            android:drawablePadding="@dimen/_5sdp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Postal Address"
+            android:inputType="textPostalAddress"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="?colorAccent"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/card_holder_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:drawableStart="@drawable/icon_phone"
+            android:drawableLeft="@drawable/icon_phone"
+            android:drawablePadding="@dimen/_5sdp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Mobile Number"
+            android:maxLength="15"
+            android:inputType="phone"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="?colorAccent"
+            app:met_singleLineEllipsis="true" />
+
+        <TextView
+            android:id="@+id/charges"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="0"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/red"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/post"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/rounded_style_green"
+            android:padding="@dimen/_5sdp"
+            android:text="Pay"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

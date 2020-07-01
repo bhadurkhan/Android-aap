@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_chome"
+            android:icon="@drawable/user"
+            android:title="@string/menu_chome" />
+        <item
+            android:id="@+id/nav_duties"
+            android:icon="@drawable/search"
+            android:title="@string/menu_duty" />
+        <item
+            android:id="@+id/nav_collection"
+            android:icon="@drawable/menu_history"
+            android:title="@string/menu_collection" />
+        <item
+            android:id="@+id/nav_cpassword"
+            android:icon="@drawable/lock"
+            android:title="@string/menu_cpassword" />
+        <item
+            android:id="@+id/nav_out"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+    </group>
+</menu>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cu.gerbagecollection">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        tools:replace="android:icon"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".citizen.CitizenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".collector.CollectorActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignInActivity"
+            android:label="Sign In"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".SignInEmployeeActivity"
+            android:label="Sign In"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".SignupActivity"
+            android:label="Registration"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".citizen.ActivityFeedback"
+            android:label="Feeback Form"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".UpdateProfileActivity"
+            android:label="Update Profile"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".citizen.PaymentActivity"
+            android:label="Payment"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".collector.ActivityOrderDetail"
+            android:label="Job Detail"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".citizen.ActivityRequestDetail"
+            android:label="Request Detail"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

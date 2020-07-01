@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Garbage Collection</string>
+<!--    <string name="slogan">صاف شفاف ایبٹ اباد</string>-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="msg">Feedback about our services. Your feedback is important to us.</string>
+    <string name="menu_home">Profile</string>
+    <string name="menu_schedule">Generate Schedule</string>
+    <string name="menu_requestlist">My Request</string>
+    <string name="menu_password">Change Password</string>
+    <string name="menu_feedback">Feedback</string>
+
+    <string name="menu_chome">Profile</string>
+    <string name="menu_duty">My Duty</string>
+    <string name="menu_collection">My Collection</string>
+    <string name="menu_cpassword">Change Password</string>
+
+
+    <string-array name="request_type">
+        <item>Select Request Type</item>
+        <item>Residential</item>
+        <item>Commercial</item>
+    </string-array>
+    <string name="purchase">Purchase</string>
+    <string name="valid">Card is valid, pay now.</string>
+    <string name="invalid">Card is invalid, please provide a valid card.</string>
+    <string name="logout">Logout</string>
+</resources>
